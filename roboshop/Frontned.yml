@@ -1,7 +1,7 @@
-- name: Frontend Playbook
+- name: Setup Frontend
   hosts: all
   tasks:
-    - name: Install the latest version of Apache
+    - name: Installing Nginx Server
       ansible.builtin.yum:
-        name: httpd
+        name: nginx
         state: latest
